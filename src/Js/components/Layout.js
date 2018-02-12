@@ -13,17 +13,14 @@ import {
     Segment,
     Table,
 } from 'semantic-ui-react'
+import AppHeader from './AppHeader';
+
+import { Link } from 'react-router-dom';
 
 const Layout = () => (
-    <Grid container style={{ padding: '2em 2em' }}>
-        <Grid.Column width={8}>
-            <Image size='small' src='img/nh-icon.jpg' />
-        </Grid.Column>
-        <Grid.Column textAlign="right" verticalAlign="bottom" width={8} >
-            We specialize in home decor..
-        </Grid.Column>
-
-        <Grid.Row>
+    <Grid>
+        <AppHeader/>
+        <Grid.Row style={{ paddingTop: '0rem' }}>
             <Grid.Column>
                 <Message>
                     <Header as='h1'>Hello, world!</Header>
